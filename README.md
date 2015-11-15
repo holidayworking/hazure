@@ -1,6 +1,7 @@
 # Hazure
 
 [![Build Status](https://img.shields.io/travis/holidayworking/hazure/master.svg)](https://travis-ci.org/holidayworking/hazure)
+[![Code Climate](https://img.shields.io/codeclimate/github/holidayworking/hazure.svg)](https://codeclimate.com/github/holidayworking/hazure)
 
 Outlier Detection with One-class SVM
 
