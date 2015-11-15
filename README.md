@@ -1,5 +1,7 @@
 # Hazure
 
+[![Build Status](https://img.shields.io/travis/holidayworking/hazure/master.svg)](https://travis-ci.org/holidayworking/hazure)
+
 Outlier Detection with One-class SVM
 
 ## Installation
