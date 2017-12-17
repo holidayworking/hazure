@@ -20,7 +20,7 @@ module Hazure
     end
 
     def outlier?(x)
-      @model.predict(Libsvm::Node.features(Array.wrap(x))) == 1.0
+      @model.predict(Libsvm::Node.features(Array(x))) == 1.0
     end
   end
 end
