@@ -1,5 +1,3 @@
-require 'active_support'
-require 'active_support/core_ext'
 require 'libsvm'
 
 module Hazure
@@ -10,7 +8,7 @@ module Hazure
 
     def train(examples, cache_size: 1, eps: 0.001, nu: 0.5)
       problem = Libsvm::Problem.new
-      problem.set_examples([1] * examples.size, examples.map { |item| Libsvm::Node.features(Array.wrap(item)) })
+      problem.set_examples([1] * examples.size, examples.map { |item| Libsvm::Node.features(Array(item)) })
 
       parameter = Libsvm::SvmParameter.new
       parameter.cache_size = cache_size
